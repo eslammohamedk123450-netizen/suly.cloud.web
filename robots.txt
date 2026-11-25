@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://suly.cloud/sitemap.xml
