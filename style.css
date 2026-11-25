@@ -2366,3 +2366,59 @@ a.contact-info__value:hover { color: var(--accent-dark); }
   text-shadow: 0 1px 8px rgba(0, 0, 0, 0.38);
 }
 
+/* =====================================================================
+   صفحات المحتوى: الأسئلة الشائعة + الشروط + الخصوصية + الأمان
+   ===================================================================== */
+.faq,
+.legal {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.faq { display: flex; flex-direction: column; gap: 14px; }
+
+.faq__item {
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  border-radius: 16px;
+  padding: 18px 20px;
+}
+.faq__q {
+  font-size: 1.08rem;
+  font-weight: 800;
+  color: #fff;
+  margin: 0 0 8px;
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.45);
+}
+.faq__a { color: var(--desc); line-height: 1.9; margin: 0; }
+
+.legal { display: flex; flex-direction: column; gap: 26px; }
+.legal__updated { font-size: 0.9rem; color: var(--muted); }
+.legal__block h2 {
+  font-size: 1.3rem;
+  color: #fff;
+  margin: 0 0 10px;
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.45);
+}
+.legal__block p,
+.legal__block li { color: var(--desc); line-height: 1.95; font-size: 1.02rem; }
+.legal__block p + p { margin-top: 10px; }
+.legal__block ul { padding-inline-start: 24px; display: flex; flex-direction: column; gap: 8px; margin: 6px 0; }
+.legal__block a { color: #fff; text-decoration: underline; word-break: break-word; }
+
+/* روابط قانونية أسفل الفوتر */
+.footer__legal {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 20px;
+  margin-top: 14px;
+}
+.footer__legal a {
+  font-size: 13px;
+  color: var(--muted);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.footer__legal a:hover { color: #fff; }
+
